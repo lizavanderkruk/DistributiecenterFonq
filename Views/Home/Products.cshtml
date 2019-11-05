@@ -1,0 +1,45 @@
+﻿@model List<DistributiecenterFonq.Models.Producten>
+
+@{
+    ViewBag.Title = "Products";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>De volgende producten zijn beschikbaar: </p>
+
+@Html.ActionLink("Add new product", "Add", "Home")
+
+<table>
+    <tr>
+        <th class="kopregel">Afbeelding</th>
+        <th class="kopregel">Merk</th>
+        <th class="kopregel">Type</th>
+        <th class="kopregel">Afmeting</th>
+        @*<th class="kopregel">Gewicht</th>*@
+        <th class="kopregel">Totale voorraad</th>
+        <th class="kopregel">Vestigingen</th>
+        <th class="kopregel">Update product</th>
+        <th class="kopregel">Delete product</th>
+    </tr>
+
+
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td><img src="~/Images/@p.Afbeelding" height="100" width="100"></td>
+            <td>@p.Merk</td>
+            <td>@p.Type</td>
+            <td>@p.Afmeting</td>
+            @*<td>@p.Gewicht</td>*@
+            <td>@p.Voorraad</td>
+            <td>@Html.ActionLink("Winkelvoorraad", "ShowVestigingvoorraad", "Vestiging", new { productID = p.Id }, null)</td>
+            <td>@Html.ActionLink("Update product", "Update", "Home", new { productID = p.Id }, null)</td>
+            <td>@Html.ActionLink("Delete product", "Delete", "Home", new { productID = p.Id }, null)</td>
+        </tr>
+    }
+</table>
+
+
+
+

@@ -1,0 +1,35 @@
+﻿@model DistributiecenterFonq.Models.Producten
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Voeg een nieuw product toe:</h2>
+@using (Html.BeginForm("Add", "Home"))
+    {
+<table>
+    <tr> 
+        <td>@Html.LabelFor(m => m.Afbeelding)</td>
+        <td>@Html.LabelFor(m => m.Merk)</td>
+        <td>@Html.LabelFor(m => m.Type)</td>
+        <td>@Html.LabelFor(m => m.Afmeting)</td>
+        <td>@Html.LabelFor(m => m.Gewicht)</td>
+        <td>@Html.LabelFor(m => m.Voorraad)</td>
+    </tr>
+    <tr>
+        <td>@Html.TextBoxFor(m => m.Afbeelding)</td>
+        <td>@Html.TextBoxFor(m => m.Merk)</td>
+        @Html.ValidationMessageFor(m => m.Merk)
+        <td>@Html.TextBoxFor(m => m.Type)</td>
+        <td>@Html.TextBoxFor(m => m.Afmeting)</td>
+        <td>@Html.TextBoxFor(m => m.Gewicht)</td>
+        <td>@Html.TextBoxFor(m => m.Voorraad)</td>
+    </tr>
+</table>
+       
+        <button type="submit">Add</button>
+    }
+
+
+
+
+

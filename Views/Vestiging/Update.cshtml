@@ -1,0 +1,26 @@
+﻿@model DistributiecenterFonq.Models.Vestigingvoorraad
+@{
+    ViewBag.Title = "Update voorraad";
+}
+
+<h2>Update het product:</h2>
+@using (Html.BeginForm("Update", "Vestiging"))
+{
+    <table>
+        <tr>
+            <td>@Html.HiddenFor(m => m.VestigingId)</td>
+            <td>@Html.HiddenFor(m => m.ProductId)</td>
+            <td>@Html.LabelFor(m => m.Naam)</td>
+            <td>@Html.LabelFor(m => m.Voorraad)</td>
+        </tr>
+        <tr>
+            <td>@Html.HiddenFor(m => m.VestigingId)</td>
+            <td>@Html.HiddenFor(m => m.ProductId)</td>
+            <td>@Html.TextBoxFor(m => m.Naam)</td>
+            <td>@Html.TextBoxFor(m => m.Voorraad)</td>
+            @Html.ValidationMessageFor(m => m.Voorraad)
+        </tr>
+    </table>
+
+    <button type="submit">Update voorraad</button>
+}
