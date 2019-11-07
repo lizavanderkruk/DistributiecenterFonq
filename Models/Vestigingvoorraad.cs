@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using DistributiecenterFonq.Data_annotations;
 
 namespace DistributiecenterFonq.Models
 {
@@ -12,6 +13,7 @@ namespace DistributiecenterFonq.Models
         public int VestigingId { get; set; }
 
         [Range(0, 2000)]
+        [VeelvoudVanTwee]
         public int Voorraad { get; set; }
         public int ProductId { get; set; }
     }

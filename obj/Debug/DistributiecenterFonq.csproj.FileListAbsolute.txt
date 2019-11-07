@@ -80,3 +80,10 @@ C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\obj\Debug\Distributie
 C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\obj\Debug\DistributiecenterFonq.csproj.CopyComplete
 C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\obj\Debug\DistributiecenterFonq.dll
 C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\obj\Debug\DistributiecenterFonq.pdb
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\Ninject.dll
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\Ninject.Web.Common.dll
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\Ninject.Web.Mvc.dll
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\WebActivatorEx.dll
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\Ninject.xml
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\Ninject.Web.Common.xml
+C:\Users\QienDevelopers\source\repos\DistributiecenterFonq\bin\Ninject.Web.Mvc.xml

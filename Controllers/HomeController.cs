@@ -10,7 +10,13 @@ namespace DistributiecenterFonq.Controllers
 {
     public class HomeController : Controller
     {
-        public ProductenRepository productenRepository = new ProductenRepository();
+        //public ProductenRepository productenRepository = new ProductenRepository();
+        private readonly IProductenRepository productenRepository;
+
+        public HomeController(IProductenRepository productenRepository)
+        {
+            this.productenRepository = productenRepository;   
+        }
         public ActionResult Index()
         {
             return View();

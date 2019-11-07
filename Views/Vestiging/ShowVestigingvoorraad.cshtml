@@ -17,16 +17,8 @@
         <th class="kopregel">Update voorraad</th>
     </tr>
 
+    @Html.DisplayForModel()
 
-    @foreach (var v in Model)
-    {
-<tr>
-    @*<td>@v.VestigingId</td>
-    <td>@v.ProductId</td>*@
-    <td>@v.Naam</td>
-    <td>@v.Voorraad</td>
-    <td>@Html.ActionLink("Update voorraad", "Update", "Vestiging", new { vestId = v.VestigingId, productID = v.ProductId }, null)</td>
-</tr>
-    }
+    
 </table>
 

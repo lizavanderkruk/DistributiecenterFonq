@@ -1,0 +1,16 @@
+﻿@model DistributiecenterFonq.Models.Producten
+
+    <tr>
+        <td><img src="~/Images/@Model.Afbeelding" height="100" width="100"></td>
+        <td>@Model.Merk</td>
+        <td>@Model.Type</td>
+        <td>@Model.Afmeting</td>
+        @*<td>@p.Gewicht</td>*@
+        <td>@Model.Voorraad</td>
+        <td>@Html.ActionLink("Winkelvoorraad", "ShowVestigingvoorraad", "Vestiging", new { productID = Model.Id }, null)</td>
+        <td>@Html.ActionLink("Update product", "Update", "Home", new { productID = Model.Id }, null)</td>
+        <td>@Html.ActionLink("Delete product", "Delete", "Home", new { productID = Model.Id }, null)</td>
+    </tr>
+
+
+

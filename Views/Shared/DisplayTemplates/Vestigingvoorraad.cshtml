@@ -1,0 +1,12 @@
+﻿@model DistributiecenterFonq.Models.Vestigingvoorraad
+
+    <tr>
+        @*<td>@v.VestigingId</td>
+            <td>@v.ProductId</td>*@
+        <td>@Model.Naam</td>
+        <td>@Model.Voorraad</td>
+        <td>@Html.ActionLink("Update voorraad", "Update", "Vestiging", new { vestId = Model.VestigingId, productID = Model.ProductId }, null)</td>
+    </tr>
+
+
+

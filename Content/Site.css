@@ -35,3 +35,6 @@ th, tr, td {
     margin: 5px;
     background-color: lightcoral;
 }
+.errormessage {
+    color: red;
+}

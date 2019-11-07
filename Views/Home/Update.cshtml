@@ -7,24 +7,7 @@
 @using (Html.BeginForm("Update", "Home"))
 {
     <table>
-        <tr>
-            <td>@Html.HiddenFor(m  => m.Id)</td>
-            <td>@Html.LabelFor(m => m.Afbeelding)</td>
-            <td>@Html.LabelFor(m => m.Merk)</td>
-            <td>@Html.LabelFor(m => m.Type)</td>
-            <td>@Html.LabelFor(m => m.Afmeting)</td>
-            <td>@Html.LabelFor(m => m.Gewicht)</td>
-            <td>@Html.LabelFor(m => m.Voorraad)</td>
-        </tr>
-        <tr>
-            <td>@Html.HiddenFor(m => m.Id)</td>
-            <td>@Html.TextBoxFor(m => m.Afbeelding)</td>
-            <td>@Html.TextBoxFor(m => m.Merk)</td>
-            <td>@Html.TextBoxFor(m => m.Type)</td>
-            <td>@Html.TextBoxFor(m => m.Afmeting)</td>
-            <td>@Html.TextBoxFor(m => m.Gewicht)</td>
-            <td>@Html.TextBoxFor(m => m.Voorraad)</td>
-        </tr>
+        @Html.EditorForModel()
     </table>
 
     <button type="submit">Update product</button>

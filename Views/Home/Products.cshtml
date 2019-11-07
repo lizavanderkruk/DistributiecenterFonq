@@ -23,21 +23,8 @@
         <th class="kopregel">Delete product</th>
     </tr>
 
+    @Html.DisplayForModel()
 
-    @foreach (var p in Model)
-    {
-        <tr>
-            <td><img src="~/Images/@p.Afbeelding" height="100" width="100"></td>
-            <td>@p.Merk</td>
-            <td>@p.Type</td>
-            <td>@p.Afmeting</td>
-            @*<td>@p.Gewicht</td>*@
-            <td>@p.Voorraad</td>
-            <td>@Html.ActionLink("Winkelvoorraad", "ShowVestigingvoorraad", "Vestiging", new { productID = p.Id }, null)</td>
-            <td>@Html.ActionLink("Update product", "Update", "Home", new { productID = p.Id }, null)</td>
-            <td>@Html.ActionLink("Delete product", "Delete", "Home", new { productID = p.Id }, null)</td>
-        </tr>
-    }
 </table>
 
 

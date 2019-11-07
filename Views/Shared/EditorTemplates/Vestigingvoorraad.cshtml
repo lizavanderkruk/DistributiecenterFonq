@@ -1,0 +1,15 @@
+﻿
+@model DistributiecenterFonq.Models.Vestigingvoorraad
+
+<tr>
+    <td>@Html.LabelFor(m => m.Naam)</td>
+    <td>@Html.LabelFor(m => m.Voorraad)</td>
+</tr>
+<tr>
+    @Html.HiddenFor(m => m.VestigingId)
+    @Html.HiddenFor(m => m.ProductId)
+    <td>@Html.TextBoxFor(m => m.Naam)</td>
+    <td>@Html.TextBoxFor(m => m.Voorraad)</td>
+    @Html.ValidationMessageFor(m => m.Voorraad, "", new { @class = "errormessage" })
+</tr>
+
